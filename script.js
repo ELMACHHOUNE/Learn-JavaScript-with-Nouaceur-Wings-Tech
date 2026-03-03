@@ -69,18 +69,29 @@
 
 //Adding Elements
 // Creating a new div element
-var x = document.createElement("div");
+// var x = document.createElement("div");
+// // Creating a text node
+// var y = document.createTextNode("Hi, how are you doing?");
+// // Adding the text node to the newly created div
+// x.appendChild(y);
+// // Adding the newly created element and its content into the DOM
+// var z = document.getElementById("main");
+// z.appendChild(x);
 
-// Creating a text node
+//Getting or Setting HTML Contents to DOM
+// Getting inner HTML conents
+// var contents = document.getElementById("main").innerHTML;
+// console.log("contents", contents);
 
-var y = document.createTextNode("Hi, how are you doing?");
+// // Setting inner HTML contents
+// var mainDiv = document.getElementById("main");
+// mainDiv.innerHTML = "<p>This is <em>newly inserted</em> paragraph.</p>";
 
-// Adding the text node to the newly created div
+//Remove Elements
+var x = document.getElementById("main");
 
-x.appendChild(y);
+var y = document.getElementById("hint");
 
-// Adding the newly created element and its content into the DOM
+x.removeChild(y);
 
-var z = document.getElementById("main");
-
-z.appendChild(x);
+console.log("parentElem", x);
